@@ -1,0 +1,26 @@
+A Idéia do Projeto é colocar, em um código só, uma variedade grande de opções de entradas.
+
+Para quem não conhece a ponte PS2X & Motor Drive Board v4, permite entradas em:
+- IR nativo, 
+- Interface NRF24L01, 
+- Bluetooth com HC06
+- Controle de PS2 (que tem as opções sem fio como dois que tenho em casa para isso)
+
+Eu pretendo usar todos no meu programa menos o Wi fi.
+
+No setup o programa verifica na ordem se o PS2, o Bluetooth estão disponíveis, 
+se tiver marca como modo de recepção de mensagens e usa elas, caso não encontre, 
+assume automaticamente que será IR.
+
+A Placa tem também a fução de 
+- acoplar até 8 Servos. Vou usar um só para girar a "cabeça com sensor Ultrasonico".
+- acoplar um sensor de ultrasom. Vou usar, e vou ter de implementar mais 1 via as portas digitais que sobraram  
+- Dois RGBs integrados
+- Buzzer ativo integrado
+- Capacidade de 4 motores DC (Ou usa os DCs ou os de Passos)
+- Capacidade de 2 Motores de Passo (Com ou sem Encoder)
+- Interface I2C
+
+Meu problema como sempre é a aplimentação de energia que consome muito.
+
+Por último substituir as bibliotecas feitas pelos desenvolvedores da Placa, por versões simplificadas só para este projeto.
